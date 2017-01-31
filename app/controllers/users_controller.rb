@@ -13,6 +13,12 @@ class UsersController < ApplicationController
     @count = User.count
   end
 
+  # GET /users/increase_user_stars
+  # GET /users/increase_user_stars,json
+  def increase_user_stars
+
+  end
+
   # GET /users/1
   # GET /users/1.json
   def show
