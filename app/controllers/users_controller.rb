@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :set_user, only: [:show, :edit, :update, :destroy, :increase_user_stars]
 
   # GET /users
   # GET /users.json
@@ -16,7 +16,8 @@ class UsersController < ApplicationController
   # GET /users/increase_user_stars
   # GET /users/increase_user_stars,json
   def increase_user_stars
-
+    @user.add_star!
+    @user.save
   end
 
   # GET /users/1

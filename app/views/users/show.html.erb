@@ -16,7 +16,7 @@
 <p>
   <strong>No stars:</strong>
   <%= @user.no_stars %>
-  <%= button_to 'Increase Stars', increase_user_stars_users_path(@user) %>
+  <%= button_to 'Increase Stars', raise_stars_path %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
